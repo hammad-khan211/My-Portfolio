@@ -206,7 +206,7 @@ body {
 }
 
 .skill-category ul {
-    list-style-type: none;
+    list-style-type:square;
 }
 
 .skill-category li {
