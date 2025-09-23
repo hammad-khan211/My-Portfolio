@@ -3,6 +3,12 @@
     --primary-text: #333333;
     --accent: #007BFF;
     --translucent-bg: rgba(255, 255, 255, 0.7);
+    
+    /* New Dark Theme Variables */
+    --dark-bg: #121212;
+    --dark-text: #E0E0E0;
+    --dark-accent: #6C63FF;
+    --dark-translucent-bg: rgba(30, 30, 30, 0.7);
 }
 
 * {
@@ -22,6 +28,13 @@ body {
     color: var(--primary-text);
     background-color: var(--primary-bg);
     padding-left: 10%;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    color: var(--dark-text);
+    background-color: var(--dark-bg);
 }
 
 #vanta-background {
@@ -45,6 +58,10 @@ body {
 #dynamic-content-container {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    max-height: 75vh;
+    overflow-y: auto;
+    padding-right: 15px;
 }
 
 .section-title {
@@ -54,6 +71,11 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
     color: var(--accent);
+}
+
+/* Dark theme section titles */
+body.dark-theme .section-title {
+    color: var(--dark-accent);
 }
 
 .blueprint-header {
@@ -72,12 +94,22 @@ body {
     color: var(--primary-text);
 }
 
+/* Dark theme main title */
+body.dark-theme .main-title {
+    color: var(--dark-text);
+}
+
 .subtitle {
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--primary-text);
+}
+
+/* Dark theme subtitle */
+body.dark-theme .subtitle {
+    color: var(--dark-text);
 }
 
 .main-nav ul {
@@ -101,6 +133,15 @@ body {
     color: var(--accent);
 }
 
+/* Dark theme nav link */
+body.dark-theme .nav-link {
+    color: var(--dark-text);
+}
+
+body.dark-theme .nav-link:hover {
+    color: var(--dark-accent);
+}
+
 .nav-link::before {
     content: '';
     position: absolute;
@@ -112,6 +153,11 @@ body {
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
+}
+
+/* Dark theme nav link underline */
+body.dark-theme .nav-link::before {
+    background: var(--dark-accent);
 }
 
 .nav-link:hover::before {
@@ -127,9 +173,17 @@ body {
     background-color: var(--translucent-bg);
     border-radius: 8px;
     padding: 20px;
-    max-height: 70vh;
+    width: 100%;
+    max-height: 75vh;
     overflow-y: auto;
-    padding-right: 15px;
+}
+
+/* Dark theme content sections */
+body.dark-theme .about-me-content,
+body.dark-theme .project-logs-content,
+body.dark-theme .specs-content,
+body.dark-theme .contact-content {
+    background-color: var(--dark-translucent-bg);
 }
 
 .about-me-content h2,
@@ -145,7 +199,6 @@ body {
     gap: 20px;
 }
 
-/* Updated styles for the project cards */
 .project-card {
     border: 1px solid var(--primary-text);
     padding: 20px;
@@ -154,9 +207,21 @@ body {
     color: var(--primary-text);
 }
 
+/* Dark theme project card */
+body.dark-theme .project-card {
+    border-color: var(--dark-text);
+    background-color: var(--dark-translucent-bg);
+    color: var(--dark-text);
+}
+
 .project-card h3 {
     margin-bottom: 10px;
-    color: var(--primary-text);
+    color: var(--accent);
+}
+
+/* Dark theme project card h3 */
+body.dark-theme .project-card h3 {
+    color: var(--dark-accentx);
 }
 
 .project-links a {
@@ -167,8 +232,18 @@ body {
     font-size: 1.2rem;
 }
 
+/* Dark theme project links */
+body.dark-theme .project-links a {
+    color: var(--dark-text);
+    border-bottom-color: var(--dark-accent);
+}
+
 .project-links a:hover {
     color: var(--accent);
+}
+
+body.dark-theme .project-links a:hover {
+    color: var(--dark-accent);
 }
 
 .project-card img {
@@ -183,10 +258,14 @@ body {
     cursor: pointer;
 }
 
-.project-card img:hover {
-    transform: scale(1.05); /* Scales the image up by 5% on hover */
+/* Dark theme image border */
+body.dark-theme .project-card img {
+    border-color: var(--dark-text);
 }
 
+.project-card img:hover {
+    transform: scale(1.05);
+}
 
 .skills-grid {
     display: grid;
@@ -200,13 +279,23 @@ body {
     border-radius: 8px;
 }
 
+/* Dark theme skill category */
+body.dark-theme .skill-category {
+    border-color: var(--dark-text);
+}
+
 .skill-category h3 {
     margin-bottom: 10px;
     color: var(--accent);
 }
 
+/* Dark theme skill category h3 */
+body.dark-theme .skill-category h3 {
+    color: var(--dark-accent);
+}
+
 .skill-category ul {
-    list-style-type:square;
+    list-style-type: square;
 }
 
 .skill-category li {
@@ -221,7 +310,8 @@ body {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea
+ {
     padding: 10px;
     background: none;
     border: 1px solid var(--primary-text);
@@ -229,25 +319,36 @@ body {
     font-family: 'Montserrat', sans-serif;
     border-radius: 4px;
 }
+.contact-form button{
+      padding: 10px;
+    background-color: var(--accent);
+    border: 1px solid var(--primary-text);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+
+}
+
+/* Dark theme form inputs */
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+    border-color: var(--dark-text);
+    color: var(--dark-text);
+}
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: #888;
 }
 
-.contact-form button {
-    padding: 10px 20px;
-    background-color: var(--accent);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    transition: background-color 0.3s ease;
-    border-radius: 4px;
+/* Dark theme button */
+body.dark-theme .contact-form button {
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
 }
 
-.contact-form button:hover {
-    background-color: #0056b3;
+body.dark-theme .contact-form button:hover {
+    background-color: #554DCC;
 }
 
 .social-links {
@@ -262,12 +363,31 @@ body {
     font-size: 0.9rem;
 }
 
-/* Styling for new About Me sections */
+/* Dark theme social links */
+body.dark-theme .social-link {
+    color: var(--dark-text);
+    border-bottom-color: var(--dark-accent);
+}
+
+.social-link:hover {
+    color: var(--accent);
+}
+
+body.dark-theme .social-link:hover {
+    color: var(--dark-accent);
+}
+
+/* About Me sections */
 .about-me-content h3 {
     color: var(--accent);
     margin-top: 25px;
     margin-bottom: 10px;
     font-size: 1.5rem;
+}
+
+/* Dark theme about me h3 */
+body.dark-theme .about-me-content h3 {
+    color: var(--dark-accent);
 }
 
 .profile-section {
@@ -283,6 +403,11 @@ body {
     margin-bottom: 10px;
 }
 
+/* Dark theme academic h4 */
+body.dark-theme .about-me-content .academic-table-container h4 {
+    color: var(--dark-text);
+}
+
 .about-me-content .academic-table {
     width: 100%;
     border-collapse: collapse;
@@ -295,10 +420,15 @@ body {
     text-align: left;
 }
 
-.about-me-content .academic-table th {
-    background-color: #eee;
-    color: var(--primary-text);
-    font-weight: bold;
+/* Dark theme table */
+body.dark-theme .about-me-content .academic-table th,
+body.dark-theme .about-me-content .academic-table td {
+    border-color: #555;
+}
+
+body.dark-theme .about-me-content .academic-table th {
+    background-color: #222;
+    color: var(--dark-text);
 }
 
 .about-me-content .credentials-list {
@@ -319,11 +449,15 @@ body {
     transition: border-bottom 0.3s ease;
 }
 
-.about-me-content .credentials-link:hover {
-    border-bottom: 1px solid var(--accent);
+/* Dark theme credentials link */
+body.dark-theme .about-me-content .credentials-link {
+    color: var(--dark-accent);
 }
 
-/* Styles for the new photo card layout */
+body.dark-theme .about-me-content .credentials-link:hover {
+    border-bottom-color: var(--dark-accent);
+}
+
 .profile-card-and-bio {
     display: flex;
     align-items: flex-start;
@@ -340,6 +474,13 @@ body {
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme profile card */
+body.dark-theme .profile-image-card {
+    background-color: var(--dark-translucent-bg);
+    border-color: #555;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .profile-image {
@@ -360,7 +501,6 @@ body {
     flex: 1;
 }
 
-/* Make it responsive for smaller screens */
 @media (max-width: 600px) {
     .profile-card-and-bio {
         flex-direction: column;
@@ -394,17 +534,17 @@ body {
 }
 
 .phone-btn {
-    background-color: #007BFF; /* Blue */
+    background-color: #007BFF;
 }
 
 .whatsapp-btn {
-    background-color: #25D366; /* Green */
+    background-color: #25D366;
 }
 
 .gmail-btn {
-    background-color: #FFC107; /* Yellow */
+    background-color: #FFC107;
 }
-/* New styles for floating LinkedIn and GitHub buttons */
+
 .linkedin-btn {
     background-color: #0A66C2;
 }
@@ -412,7 +552,28 @@ body {
 .github-btn {
     background-color: #333;
 }
+
 .insta-btn {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
+#theme-switcher-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+body.dark-theme #theme-switcher-btn {
+    background-color: var(--dark-text);
+    color: var(--dark-bg);
+}

@@ -1,5 +1,5 @@
-// Vanta.js initialization for a light theme
-VANTA.GLOBE({
+// Vanta.js initialization
+const vantaEffect = VANTA.GLOBE({
     el: "#vanta-background",
     mouseControls: true,
     touchControls: true,
@@ -13,9 +13,37 @@ VANTA.GLOBE({
     backgroundColor: 0xF5F5F5
 });
 
+// Function to update Vanta.js colors for the theme
+function updateVantaColors(isDark) {
+    if (vantaEffect) {
+        if (isDark) {
+            vantaEffect.setOptions({
+                color: 0x6C63FF,
+                backgroundColor: 0x121212
+            });
+        } else {
+            vantaEffect.setOptions({
+                color: 0x007BFF,
+                backgroundColor: 0xF5F5F5
+            });
+        }
+    }
+}
+
 // Function to load content from a file
 function loadContent(pageName) {
     const contentContainer = document.getElementById('dynamic-content-container');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active-link');
+    });
+
+    const currentLink = document.querySelector(`.nav-link[data-link="${pageName}"]`);
+    if (currentLink) {
+        currentLink.classList.add('active-link');
+    }
+
     const sections = {
         'about': 'sections/about.html',
         'projects': 'sections/projects.html',
@@ -56,4 +84,32 @@ document.addEventListener('click', (e) => {
         const pageName = e.target.getAttribute('data-link');
         loadContent(pageName);
     }
+});
+
+// Theme switcher functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const themeSwitcherBtn = document.getElementById('theme-switcher-btn');
+    const body = document.body;
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+        updateVantaColors(true);
+    } else {
+        updateVantaColors(false);
+    }
+
+    // Event listener for the theme switcher button
+    if (themeSwitcherBtn) {
+        themeSwitcherBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            const isDark = body.classList.contains('dark-theme');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateVantaColors(isDark);
+        });
+    }
+
+    // Load initial 'about' content
+    // loadContent('about');
 });
