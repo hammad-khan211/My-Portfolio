@@ -221,7 +221,7 @@ body.dark-theme .project-card {
 
 /* Dark theme project card h3 */
 body.dark-theme .project-card h3 {
-    color: var(--dark-accentx);
+    color: var(--dark-accent);
 }
 
 .project-links a {
