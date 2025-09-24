@@ -86,6 +86,8 @@ body.dark-theme .section-title {
     margin-bottom: 20px;
 }
 
+
+
 .main-title {
     font-size: 3rem;
     font-weight: 700;
@@ -132,6 +134,10 @@ body.dark-theme .subtitle {
 .nav-link:hover {
     color: var(--accent);
 }
+
+.about-me-content::-webkit-scrollbar {
+        display: none;
+    }
 
 /* Dark theme nav link */
 body.dark-theme .nav-link {
@@ -192,6 +198,11 @@ body.dark-theme .contact-content {
 .contact-content h2 {
     margin-top: 0;
 }
+.project-logs-content::-webkit-scrollbar {
+        display: none;
+    }
+
+
 
 .project-grid {
     display: grid;
@@ -272,6 +283,9 @@ body.dark-theme .project-card img {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
+.specs-content::-webkit-scrollbar {
+        display: none;
+    }
 
 .skill-category {
     border: 1px solid var(--primary-text);
