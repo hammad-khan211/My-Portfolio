@@ -591,3 +591,65 @@ body.dark-theme #theme-switcher-btn {
     background-color: var(--dark-text);
     color: var(--dark-bg);
 }
+
+
+.button-container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-button {
+    background-color: #007bff; /* A blue color */
+    color: #fff;
+    border: 2px solid #007bff;
+}
+
+.download-button {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.view-button:hover {
+    background-color: #0056b3;
+}
+
+.download-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Dark theme button styles */
+body.dark-theme .view-button {
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
+    border: 2px solid var(--dark-accent);
+}
+
+body.dark-theme .download-button {
+    background-color: transparent;
+    color: var(--dark-accent);
+    border: 2px solid var(--dark-accent);
+}
+
+/* Dark theme button hover effects */
+body.dark-theme .view-button:hover {
+    background-color: #5d56d1; /* A slightly darker shade of the accent color */
+    border-color: #5d56d1;
+}
+
+body.dark-theme .download-button:hover {
+    background-color: var(--dark-accent);
+    color: var(--dark-text);
+}
