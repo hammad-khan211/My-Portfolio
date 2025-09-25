@@ -23,7 +23,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
+     overflow-x: hidden;  
     position: relative;
     color: var(--primary-text);
     background-color: var(--primary-bg);
@@ -180,8 +180,8 @@ body.dark-theme .nav-link::before {
     border-radius: 8px;
     padding: 20px;
     width: 100%;
-    max-height: 75vh;
-    overflow-y: auto;
+    /* max-height: 75vh; */
+    /* overflow-y: auto; */
 }
 
 /* Dark theme content sections */
@@ -652,4 +652,17 @@ body.dark-theme .view-button:hover {
 body.dark-theme .download-button:hover {
     background-color: var(--dark-accent);
     color: var(--dark-text);
+}
+
+@media (max-width: 600px) {
+    .resume-button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
