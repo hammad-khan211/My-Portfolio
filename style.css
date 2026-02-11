@@ -109,6 +109,8 @@ body.dark-theme .main-title {
     color: var(--primary-text);
 }
 
+
+
 /* Dark theme subtitle */
 body.dark-theme .subtitle {
     color: var(--dark-text);
