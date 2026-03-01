@@ -668,3 +668,15 @@ body.dark-theme .download-button:hover {
         align-items: center;
     }
 }
+
+.leetcode-icon {
+    width: 30px;        /* increase size */
+    height: 30px;
+    object-fit: contain;
+}
+
+.leetcode-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
