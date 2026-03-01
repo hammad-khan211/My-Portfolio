@@ -673,10 +673,20 @@ body.dark-theme .download-button:hover {
     width: 30px;        /* increase size */
     height: 30px;
     object-fit: contain;
+    
 }
 
 .leetcode-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.dark-theme .leetcode-btn {
+    background-color:#e5e7eb;
+}
+
+.dark-theme .leetcode-icon {
+    width: 30px;
+    height: 30px;
 }
