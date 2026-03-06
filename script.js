@@ -115,9 +115,162 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const typed = new Typed('.subtitle', {
-    strings: ['Physical Fitness', 'Weight Gain','Strength Training','Fat Loss','Weight Lifting','Running'],
-    typeSpeed: 60,
-    backSpeed:60,
-    backDelay:1000, 
-    loop:true,
-  }); 
+    strings: [ 'Software Developer' , 'Problem Solver' , 'DSA Enthusiast', 'IT ENGINEER'],
+    typeSpeed: 70,
+    showCursor: false,
+    loop: false
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const aiButton = document.getElementById("ai-button");
+const chat = document.getElementById("ai-chat");
+const closeChat = document.getElementById("close-chat");
+const messages = document.getElementById("chat-messages");
+
+aiButton.onclick = () => {
+
+chat.style.display = "flex";
+
+const messages = document.getElementById("chat-messages");
+
+/* only show welcome once */
+
+if(messages.innerHTML.trim() === ""){
+
+const welcome = document.createElement("div");
+welcome.className = "msg ai";
+
+welcome.innerHTML = `
+👋 Hi! I'm Hammad's AI assistant.<br><br>
+You can ask me about:<br>
+• Projects<br>
+• Skills<br>
+• LeetCode practice
+`;
+
+messages.appendChild(welcome);
+
+}
+
+};
+
+closeChat.onclick = () => {
+    chat.style.display = "none";
+};
+//send messages
+window.sendMessage = async function(){
+
+const messages = document.getElementById("chat-messages");
+const input = document.getElementById("user-input");
+const text = input.value;
+
+if(text.trim() === "") return;
+
+/* USER MESSAGE */
+
+messages.innerHTML += `<div class="msg user">${text}</div>`;
+
+/* TYPING INDICATOR */
+
+const typing = document.createElement("div");
+typing.className = "typing";
+typing.innerHTML = "<span></span><span></span><span></span>";
+
+messages.appendChild(typing);
+
+messages.scrollTop = messages.scrollHeight;
+
+input.value = "";
+
+try{
+
+/* CALL NETLIFY FUNCTION */
+
+const res = await fetch("http://localhost:3000/chat",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body: JSON.stringify({message:text})
+});
+
+const data = await res.json();
+
+/* REMOVE TYPING INDICATOR */
+
+typing.remove();
+
+/* AI MESSAGE */
+
+const aiMsg = document.createElement("div");
+aiMsg.className = "msg ai";
+
+messages.appendChild(aiMsg);
+
+/* TYPING EFFECT */
+
+typingEffect(aiMsg, data.reply);
+
+messages.scrollTop = messages.scrollHeight;
+
+}
+catch(error){
+
+typing.remove();
+
+const aiMsg = document.createElement("div");
+aiMsg.className = "msg ai";
+aiMsg.innerHTML = "⚠️ Error connecting to AI.";
+
+messages.appendChild(aiMsg);
+
+console.error(error);
+
+}
+
+}
+
+// QUICK ASK FUNCTION
+window.quickAsk = function(question){
+
+const input = document.getElementById("user-input");
+
+input.value = question;
+
+sendMessage();
+
+};
+
+});
+//Typing Effect
+function typingEffect(element, text){
+
+const messages = document.getElementById("chat-messages");
+
+element.innerHTML = "";
+
+let i = 0;
+
+function type(){
+
+if(i < text.length){
+element.innerHTML += text.charAt(i);
+i++;
+
+messages.scrollTop = messages.scrollHeight;
+
+setTimeout(type, 25);
+}
+
+}
+
+type();
+
+}
+document.getElementById("user-input")
+.addEventListener("keypress", function(e){
+if(e.key === "Enter"){
+sendMessage();
+}
+});

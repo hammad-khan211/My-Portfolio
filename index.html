@@ -38,7 +38,32 @@
         
         <div id="dynamic-content-container"></div>
     </main>
+      <div id="ai-button">
+    <i class="fas fa-robot"></i>
+</div>
+
+<div id="ai-chat">
+  <div class="chat-header">
+    Ask about Hammad
+    <span id="close-chat">✕</span>
+  </div>
+
+  <div id="chat-messages"></div>
+
+<div id="chat-suggestions">
+  <button onclick="quickAsk('Tell me about Hammad projects')">Projects</button>
+  <button onclick="quickAsk('What skills does Hammad have?')">Skills</button>
+  <button onclick="quickAsk('Does Hammad practice LeetCode?')">LeetCode</button>
+</div>
+
+  <div class="chat-input">
+    <input id="user-input" placeholder="Ask about projects, skills..." />
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     
     <script src="script.js"></script>
+
 </body>
 </html>

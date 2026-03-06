@@ -1,0 +1,404 @@
+PORTFOLIO KNOWLEDGE BASE
+For AI assistant answering questions about Ahmad Hammad Khan
+
+Basic Information
+
+Name: Ahmad Hammad Khan
+Professional Title: IT Engineer / Aspiring Software Engineer
+Location: India
+Nationality: Indian
+
+Current Status:
+Ahmad Hammad Khan is currently a third-year B.Tech student
+pursuing Information Technology at ABES Engineering College,
+Ghaziabad.
+
+Professional Identity:
+Ahmad is an aspiring software engineer who is passionate
+about building strong foundations in programming,
+algorithms, and software development.
+
+Core Interests:
+- Software Engineering
+- Data Structures and Algorithms
+- Problem Solving
+- Backend Development
+- Web Development
+
+Technical Focus:
+- Data Structures
+- Algorithms
+- Competitive Programming
+- Building practical software projects
+
+Coding Philosophy:
+Ahmad believes that strong problem solving ability and
+deep understanding of algorithms are essential to becoming
+a great software engineer.
+
+Learning Approach:
+Ahmad improves his skills by practicing coding problems,
+building projects, and continuously learning new
+technologies.
+
+
+Education
+
+Current Degree:
+Bachelor of Technology (B.Tech)
+
+Branch:
+Information Technology
+
+College:
+ABES Engineering College, Ghaziabad
+
+University:
+Dr. A.P.J. Abdul Kalam Technical University (AKTU)
+
+Current Academic Status:
+Ahmad Hammad Khan is currently in the third year of his B.Tech
+in Information Technology. His academic journey reflects strong
+discipline, consistency, and a commitment to mastering core
+computer science concepts.
+
+Academic Focus:
+During his degree, Ahmad studies fundamental subjects related
+to computer science and information technology such as:
+
+- Data Structures
+- Algorithms
+- Object Oriented Programming
+- Operating Systems
+- Database Management Systems
+- Computer Networks
+- Software Engineering
+- Web Development
+
+These subjects help him build a strong foundation for becoming
+a skilled software engineer.
+
+Semester Performance:
+
+Semester 1 — SGPA: 9.41
+Semester 2 — SGPA: 8.45
+Semester 3 — SGPA: 8.76
+Semester 4 — SGPA: 8.87
+Semester 5 — SGPA: 7.91
+Semester 6 — Current Semester (Result Pending)
+Semester 7 — Yet to come
+Semester 8 — Yet to come
+
+Overall Academic Performance:
+Ahmad has consistently maintained strong academic results
+throughout his engineering program, demonstrating a solid
+understanding of technical subjects and problem-solving skills.
+
+Result Verification:
+Academic results can be verified through the official AKTU
+One View portal using Ahmad's roll number.
+
+Roll Number:
+2300320130023
+
+School Education
+
+School Name:
+Children's Academy
+
+Board:
+Central Board of Secondary Education (CBSE)
+
+Class 12 Performance:
+Percentage: 92%
+
+Class 10 Performance:
+Percentage: 93.6%
+
+Academic Strength:
+During his school years, Ahmad consistently performed well
+academically, especially in mathematics and analytical subjects.
+His strong academic performance helped build the foundation
+for his interest in technology and engineering.
+
+
+Projects
+
+Project Name:
+Boys' Hostel Gate Tracker
+
+Project Type:
+Full Stack Web Application
+
+Description:
+The Boys' Hostel Gate Tracker is a digital entry management
+system designed to monitor student movement in and out of
+the hostel. The system allows security guards to log entry
+and exit records through a secure authentication-based
+dashboard.
+
+Purpose:
+The project was designed to digitize hostel entry logs,
+replace manual registers, and make it easier to track
+student movements and maintain accurate records.
+
+Technologies Used:
+- Node.js
+- MongoDB Atlas
+- JavaScript
+- HTML
+- CSS
+- Render (Backend Deployment)
+- Netlify (Frontend Deployment)
+
+Key Features:
+- Secure authentication for guards
+- Real-time entry and exit tracking
+- Cloud database storage
+- Access to historical entry logs
+- Online deployment with live accessibility
+
+Impact:
+This project demonstrates Ahmad's ability to build
+full-stack applications with authentication, database
+integration, and real-world usability.
+
+Project Name:
+Iron Paradise Workout Website
+
+Project Type:
+Full Stack Fitness Web Application
+
+Description:
+Iron Paradise is a fitness web application that helps users
+explore workout programs, calculate BMI, and book training
+sessions. The platform provides an interactive user interface
+and a backend system that manages user accounts.
+
+Purpose:
+The goal of this project was to create a practical fitness
+platform that combines workout guidance with user management.
+
+Technologies Used:
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- MongoDB Atlas
+- REST APIs
+
+Key Features:
+- User authentication (Register, Login, Logout)
+- BMI calculator
+- Interactive workout program display
+- Training session booking system
+- Responsive design for mobile and desktop
+
+Impact:
+This project showcases Ahmad's ability to develop a complete
+full-stack application with authentication and API integration.
+
+Project Name:
+New Kashmir Footwear Business Website
+
+Project Type:
+Business Website / E-Commerce Style Platform
+
+Description:
+This website was built for Ahmad's family business,
+New Kashmir Footwear, which has been running for
+over 30 years. The goal of the website was to bring
+the business online and attract more customers.
+
+Purpose:
+The project helped modernize the business by
+creating an online presence and showcasing products
+digitally.
+
+Technologies Used:
+- HTML
+- CSS
+- JavaScript
+
+Key Features:
+- Product showcase
+- Responsive design
+- Clean business-focused UI
+- Online visibility for the family business
+
+Impact:
+This project demonstrates Ahmad's ability to apply
+technical skills to solve real-world business problems.
+
+Project Name:
+Professional Portfolio for Prof. Pervez Khan
+
+Project Type:
+Freelance Client Website
+
+Description:
+This project involved designing and developing a
+professional portfolio website for Professor Pervez
+Khan. The goal was to create a clean, informative
+platform that highlights his academic work,
+achievements, and professional background.
+
+Purpose:
+This project provided Ahmad with real-world freelance
+experience and the opportunity to work with a client.
+
+Technologies Used:
+- HTML
+- CSS
+- JavaScript
+
+Key Features:
+- Professional academic portfolio layout
+- Responsive design
+- Clear presentation of academic information
+
+Impact:
+This project demonstrates Ahmad's ability to work on
+real client projects and deliver professional websites.
+
+Project Name:
+Amazon Front-End Clone
+
+Project Type:
+Front-End Development Project
+
+Description:
+Ahmad built a front-end clone of the Amazon website
+to improve his front-end development skills and
+understand how large-scale e-commerce interfaces
+are structured.
+
+Purpose:
+The project was designed as a practice exercise to
+strengthen skills in HTML, CSS, and JavaScript
+while recreating a complex real-world interface.
+
+Technologies Used:
+- HTML
+- CSS
+- JavaScript
+
+Key Features:
+- Amazon-style homepage layout
+- Navigation bar and product sections
+- Responsive design
+- UI components inspired by Amazon
+
+Impact:
+This project helped Ahmad sharpen his front-end
+development abilities by replicating a complex
+real-world website interface.
+
+
+Technical skills
+
+Programming Languages
+
+Ahmad has experience with multiple programming languages
+used for software development, problem solving, and web
+application development.
+
+Languages:
+- Java
+- Python
+- C++
+- JavaScript
+- C
+
+Primary Language Focus:
+Java is Ahmad's primary language for practicing
+Data Structures and Algorithms and solving coding
+problems on platforms like LeetCode.
+
+Web Development Technologies
+
+Ahmad has experience building responsive and interactive
+web applications using modern web technologies.
+
+Frontend Technologies:
+- HTML5
+- CSS
+- JavaScript (ES6+)
+- React.js
+
+Backend Technologies:
+- Node.js
+- Django
+
+Web Development Skills:
+- Responsive web design
+- REST API integration
+- Authentication systems
+- Dynamic user interfaces
+
+Databases and Backend Tools
+
+Ahmad has experience working with both relational
+and NoSQL databases for storing and managing
+application data.
+
+Databases:
+- MySQL
+- MongoDB Atlas
+
+Database Knowledge:
+- Database Management Systems (DBMS)
+- Data modeling
+- CRUD operations
+- Cloud database deployment
+
+Development Tools
+
+Ahmad uses several industry standard tools for
+software development and version control.
+
+Tools and Platforms:
+- Git
+- GitHub
+- Visual Studio Code (VS Code)
+
+Usage:
+Git and GitHub are used for version control,
+project collaboration, and maintaining source
+code repositories.
+
+Core Computer Science Knowledge
+
+Ahmad has studied and practiced several core
+computer science concepts during his academic
+journey.
+
+Subjects and Concepts:
+- Data Structures and Algorithms
+- Object-Oriented Programming using Java
+- Object-Oriented System Design using C++
+- Operating Systems
+- Theory of Automata and Formal Languages
+
+These subjects help Ahmad understand how
+software systems work internally and how to
+build efficient and scalable applications.
+
+Problem Solving and Algorithmic Thinking
+
+Ahmad regularly practices algorithmic problems
+to improve logical thinking and coding ability.
+
+Focus Areas:
+- Arrays
+- Strings
+- Hash Maps
+- Binary Search
+- Recursion
+- Sliding Window
+- Two Pointer Technique
+
+Purpose:
+These problem solving skills help Ahmad prepare
+for technical interviews and build efficient
+software solutions.
