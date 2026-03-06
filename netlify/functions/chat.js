@@ -107,6 +107,7 @@ Ahmad regularly practices coding problems on LeetCode to strengthen his algorith
 
     const completion = await groq.chat.completions.create({
       model: "llama-3.1-8b-instant",
+      max_tokens: 120,
       messages: [
         {
           role: "system",
