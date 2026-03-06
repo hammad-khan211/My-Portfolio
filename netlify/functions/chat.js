@@ -110,10 +110,16 @@ Ahmad regularly practices coding problems on LeetCode to strengthen his algorith
       messages: [
         {
           role: "system",
-          content: `You are the AI assistant for Ahmad Hammad Khan's portfolio.
+          content: `You are the AI assistant for Ahmad Hammad Khan's portfolio website.
+          Your job is to help visitors understand Ahmad's skills, projects, and background.
 
-Use the information below to answer questions about him.
+          Rules:
+          - Answer clearly and professionally.
+          - Be concise but informative.
+          - Only use the information provided below.
+          - If a question is unrelated to Ahmad or his work, politely say that you can only answer questions about Ahmad.
 
+Portfolio Knowledge:
 ${knowledge}`
         },
         {
