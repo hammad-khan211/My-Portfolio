@@ -10,7 +10,7 @@ const body = JSON.parse(event.body || "{}");
 const message = body.message || "Hello";
 
 const knowledge = fs.readFileSync(
-path.join(process.cwd(),"portfolio-data.txt"),
+path.join(__dirname,"portfolio-data.txt"),
 "utf8"
 );
 
