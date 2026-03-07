@@ -25,17 +25,35 @@ Children's Academy , Lakhimpur - Kheri
 Class 12th , 92.6% , passing year 2023
 Class 10th , 93% , passing year 2021
 
-Core Skills:
+Technical Skills
+
+Programming Languages
 - Java
-- Data Structures and Algorithms
-- Object-Oriented Programming
+- C++
+- Python
+- C
+- JavaScript
+
+Frontend Development
 - HTML
 - CSS
-- JavaScript
 - React
+
+Backend Development
 - Node.js
+
+Database
 - MongoDB
-- Git and GitHub
+
+Tools
+- Git
+- GitHub
+
+Strengths:
+- Strong problem-solving mindset
+- Consistent coding practice
+- Ability to build real-world projects
+- Self-learning and adaptability
 
 Programming Focus:
 Ahmad primarily uses Java for practicing Data Structures and Algorithms and solving coding problems on platforms like LeetCode.
@@ -114,11 +132,11 @@ He is actively improving his problem-solving skills and building real-world proj
 LeetCode Practice:
 Ahmad regularly practices coding problems on LeetCode to strengthen his algorithmic thinking and prepare for technical interviews and has solved more than 60 questions.
 
-Leetoce Link : https://leetcode.com/u/ahmad_hammad23/
+LeetCode Link : https://leetcode.com/u/ahmad_hammad23/
 
-GitHub Practices :
-No. of repositories : 15
-Git Hub Profile Link : https://github.com/hammad-khan211
+GitHub:
+- 15 public repositories
+- Profile: https://github.com/hammad-khan211
 
 LinkedIn profile : https://www.linkedin.com/in/ahmad-hammad-khan/
 
@@ -131,7 +149,7 @@ Age : 21
 
     const completion = await groq.chat.completions.create({
       model: "llama-3.1-8b-instant",
-      max_tokens: 120,
+      max_tokens: 250,
       messages: [
         {
           role: "system",
@@ -145,6 +163,12 @@ Rules:
 - Do not write long paragraphs.
 - Only use the information provided below.
 - If a question is unrelated to Ahmad, politely say you can only answer questions about Ahmad.
+
+Response Style:
+- Use simple and clear language.
+- Avoid very long paragraphs.
+- Use bullet points when listing skills or features.
+- Be friendly and professional.
 
 Portfolio Knowledge:
 ${knowledge}`
