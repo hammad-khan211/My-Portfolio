@@ -10,7 +10,20 @@ exports.handler = async function (event) {
 Ahmad Hammad Khan is an IT Engineering student and software developer from India.
 
 Education:
-- B.Tech in Information Technology
+College ( Current )
+- B.Tech in Information Technology , currently in 6th sem , will end in 2027
+
+Academic Performance :
+1st sem : 9.41
+2nd sem : 8.45
+3rd sem : 8.76
+4th sem : 8.87
+5th sem : 7.91 
+
+Schooling
+Children's Academy , Lakhimpur - Kheri
+Class 12th , 92.6% , passing year 2023
+Class 10th , 93% , passing year 2021
 
 Core Skills:
 - Java
@@ -99,7 +112,18 @@ Ahmad aims to become a skilled software engineer with strong expertise in Data S
 He is actively improving his problem-solving skills and building real-world projects.
 
 LeetCode Practice:
-Ahmad regularly practices coding problems on LeetCode to strengthen his algorithmic thinking and prepare for technical interviews.
+Ahmad regularly practices coding problems on LeetCode to strengthen his algorithmic thinking and prepare for technical interviews and has solved more than 60 questions.
+
+Leetoce Link : https://leetcode.com/u/ahmad_hammad23/
+
+GitHub Practices :
+No. of repositories : 15
+Git Hub Profile Link : https://github.com/hammad-khan211
+
+LinkedIn profile : https://www.linkedin.com/in/ahmad-hammad-khan/
+
+Gmail : ahmadhammadkhan21112005@gmail.com
+Age : 21
 `;
     const groq = new Groq({
       apiKey: process.env.GROQ_API_KEY
