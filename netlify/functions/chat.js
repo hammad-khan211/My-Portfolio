@@ -130,7 +130,7 @@ Ahmad aims to become a skilled software engineer with strong expertise in Data S
 He is actively improving his problem-solving skills and building real-world projects.
 
 LeetCode Practice:
-Ahmad regularly practices coding problems on LeetCode to strengthen his algorithmic thinking and prepare for technical interviews and has solved more than 60 questions.
+Ahmad regularly practices coding problems on LeetCode to strengthen his algorithmic thinking and prepare for technical interviews and has solved more than 70 questions.
 
 LeetCode Link : https://leetcode.com/u/ahmad_hammad23/
 
