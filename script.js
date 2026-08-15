@@ -93,25 +93,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Check for saved theme preference
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
+
+    if (savedTheme === 'light') {
+        // User previously selected light mode
+        body.classList.remove('dark-theme');
+        updateVantaColors(false);
+    } else {
+        // Default theme = dark
         body.classList.add('dark-theme');
         updateVantaColors(true);
-    } else {
-        updateVantaColors(false);
     }
 
     // Event listener for the theme switcher button
     if (themeSwitcherBtn) {
         themeSwitcherBtn.addEventListener('click', () => {
             body.classList.toggle('dark-theme');
+
             const isDark = body.classList.contains('dark-theme');
+
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
             updateVantaColors(isDark);
         });
     }
-
-    // Load initial 'about' content
-    // loadContent('about');
 });
 
 const typed = new Typed('.subtitle', {
