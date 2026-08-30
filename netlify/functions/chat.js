@@ -11,7 +11,7 @@ Ahmad Hammad Khan is an IT Engineering student and software developer from India
 
 Education:
 College ( Current )
-- B.Tech in Information Technology , currently in 6th sem , will end in 2027
+- B.Tech in Information Technology , currently in 7th sem , will end in 2027
 
 Academic Performance :
 1st sem : 9.41
@@ -19,11 +19,12 @@ Academic Performance :
 3rd sem : 8.76
 4th sem : 8.87
 5th sem : 7.91 
+6th sem : 8.05
 
 Schooling
 Children's Academy , Lakhimpur - Kheri
-Class 12th , 92.6% , passing year 2023
-Class 10th , 93% , passing year 2021
+Class 12th , 92% , passing year 2023
+Class 10th , 93.6% , passing year 2021
 
 Technical Skills
 
@@ -130,7 +131,7 @@ Ahmad aims to become a skilled software engineer with strong expertise in Data S
 He is actively improving his problem-solving skills and building real-world projects.
 
 LeetCode Practice:
-Ahmad regularly practices coding problems on LeetCode to strengthen his algorithmic thinking and prepare for technical interviews and has solved more than 180 questions.
+Ahmad regularly practices coding problems on LeetCode to strengthen his algorithmic thinking and prepare for technical interviews and has solved more than 200 questions.
 
 LeetCode Link : https://leetcode.com/u/ahmad_hammad23/
 
